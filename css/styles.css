@@ -21,12 +21,20 @@
     src: url("fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
 }
-
+html {
+    height: 100%;
+}
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: Rubik;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
+}
+.main-container {
+    flex-grow: 1;
 }
 .page-header {
     background-color: #FFE17F;
