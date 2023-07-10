@@ -9,26 +9,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="page-body">
   <header class="page-header">
     <h1 class="visually-hidden">Device</h1>
     <a class="page-link" href="index.html">
       <img src="img/device-icon.svg" width="145" height="36" alt="Девайс" class="site-logo">
     </a>  
+    <h2 class="visually-hidden">Навигация</h2>
     <section class="nav-bar">
-      <h2 class="visually-hidden">Навигация</h2>
-      <input type="text" class="search-input" placeholder="Текст поиска">
-      <button class="button search-button">Найти</button>
-      <a class="nav-login" href="#">Войти</a>
-      <a class="nav-logout visually-hidden" href="#">Выйти</a>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Сравнить</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Корзина</a>
-        </li>
-      </ul>
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Текст поиска">
+          <button class="button search-button">Найти</button>
+        </div>
+        <div class="login-container">
+          <a class="nav-login" href="#">Войти</a>
+          <a class="nav-logout visually-hidden" href="#">Выйти</a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Сравнить</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Корзина</a>
+          </li>
+        </ul>
     </section>
     <section class="shop-menu">
       <ul class="shop-menu-list">
@@ -53,28 +57,38 @@
       <h2 class="visually-hidden">Витрина товаров</h2>
       <div class="slider-picture slider-one">
         <img src="img/slider-1.png" width="560" height="560" alt="Квадрокоптер" class="slider-img">
-        <button class="slider-button slider-prev">Предыдущий товар</button>
-        <button class="slider-button slider-next">Следующий товар</button>
+        <div class="slider-buttons">
+          <button class="slider-prev">Предыдущий товар</button>
+          <button class="slider-next">Следующий товар</button>
+        </div>
       </div>
       <div class="slider-description slider-one">
         <p class="section-title">Порхает как бабочка, жалит как пчела!</p>
         <p class="section-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        <button class="button info-button">Подробнее</button>
-        <ol class="section-indicators">
-          <li class="indicator-item">
-            <a href="#" class="indicator-link">Первый слайд</a>
-          </li>
-          <li class="indicator-item">
-            <a href="#" class="indicator-link">Второй слайд</a>
-          </li>
-          <li class="indicator-item">
-            <a href="#" class="indicator-link">Третий слайд</a>
-          </li>
-        </ol>
-        <p class="section-specs">Дальность полета</p>
-        <p class="section-specs-value">800 м</p>
-        <p class="section-specs">Радиус поражения</p>
-        <p class="section-specs-value">50 м</p>
+        <div class="slider-menu">
+          <button class="button info-button">Подробнее</button>
+          <ol class="section-indicators">
+            <li class="indicator-item">
+              <a href="#" class="indicator-link">Первый слайд</a>
+            </li>
+            <li class="indicator-item">
+              <a href="#" class="indicator-link">Второй слайд</a>
+            </li>
+            <li class="indicator-item">
+              <a href="#" class="indicator-link">Третий слайд</a>
+            </li>
+          </ol>
+        </div>
+        <div class="slider-specs">
+          <div class="specs-container">
+            <p class="specs-desc">Дальность полета</p>
+            <p class="specs-value">800 м</p>
+          </div>
+          <div class="specs-container">
+            <p class="specs-desc">Радиус поражения</p>
+            <p class="specs-value">50 м</p>
+          </div>
+        </div>
       </div>
       <!-- <div class="slider-picture slider-two">
         <img src="img/slider-2.png" width="560" height="560" alt="Квадрокоптер" class="slider-img">
@@ -130,30 +144,32 @@
 
     <section class="main-catalog-menu">
       <h2 class="visually-hidden">Категории товаров</h2>
-      <a href="catalog.html" class="catalog-item">
-        <img src="img/vr-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
-        <h3 class="catalog-menu-category">Виртуальная реальность</h3>
-      </a>
-      <a href="catalog.html" class="catalog-item">
-        <img src="img/selfie-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
-        <h3 class="catalog-menu-category">Моноподы для селфи</h3>
-      </a>
-      <a href="catalog.html" class="catalog-item">
-        <img src="img/actioncam-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
-        <h3 class="catalog-menu-category">Экшн-камеры</h3>
-      </a>
-      <a href="catalog.html" class="catalog-item">
-        <img src="img/fitness-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
-        <h3 class="catalog-menu-category">Фитнес-браслеты</h3>
-      </a>
-      <a href="catalog.html" class="catalog-item">
-        <img src="img/smartwatch-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
-        <h3 class="catalog-menu-category">Умные часы</h3>
-      </a>
-      <a href="catalog.html" class="catalog-item">
-        <img src="img/drones-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
-        <h3 class="catalog-menu-category">Квадрокоптеры</h3>
-      </a>
+      <div class="menu-container">
+        <a href="catalog.html" class="catalog-item">
+          <img src="img/vr-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
+          <h3 class="catalog-menu-category">Виртуальная реальность</h3>
+        </a>
+        <a href="catalog.html" class="catalog-item">
+          <img src="img/selfie-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
+          <h3 class="catalog-menu-category">Моноподы для селфи</h3>
+        </a>
+        <a href="catalog.html" class="catalog-item">
+          <img src="img/actioncam-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
+          <h3 class="catalog-menu-category">Экшн-камеры</h3>
+        </a>
+        <a href="catalog.html" class="catalog-item">
+          <img src="img/fitness-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
+          <h3 class="catalog-menu-category">Фитнес-браслеты</h3>
+        </a>
+        <a href="catalog.html" class="catalog-item">
+          <img src="img/smartwatch-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
+          <h3 class="catalog-menu-category">Умные часы</h3>
+        </a>
+        <a href="catalog.html" class="catalog-item">
+          <img src="img/drones-icon.svg" alt="" width="160" height="160" class="catalog-menu-img">
+          <h3 class="catalog-menu-category">Квадрокоптеры</h3>
+        </a>
+      </div>
     </section>
     
     <section class="main-advantages">
