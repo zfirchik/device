@@ -404,6 +404,7 @@ address {
     margin: 0;
 }
 .subscribe-desc {
+    color: #444444;
     margin: 0;
     margin-left: 252px;
     width: 560px;
@@ -448,6 +449,7 @@ address {
     text-transform: uppercase;
 }
 .subscribe-free {
+    color: #444444;
     margin-left: auto;
 }
 .expand-button {
