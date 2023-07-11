@@ -51,6 +51,7 @@ html {
     align-self: center;
 }
 .page-header {
+    box-sizing: border-box;
     align-self: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -115,8 +116,10 @@ html {
 .nav-menu {
     margin: 0;
     padding: 0;
-    width: 241px;
     height: 30px;
+    list-style: none;
+    display: flex;
+    gap: 36px;
 }
 .nav-bar {
     font-family: "Rubik", sans-serif;
@@ -127,6 +130,19 @@ html {
 .nav-bar a {
     text-decoration: none;
     color: #000000;
+}
+.nav-login {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+.icon-text {
+    margin: 0;
+    margin-left: 12px;
 }
 .nav-logout {
     margin-left: 28px;
@@ -141,9 +157,22 @@ html {
     letter-spacing: 3.6px;
     text-transform: uppercase;
 }
+.shop-menu-list {
+    list-style: none;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    gap: 45px;
+}
 .shop-menu-link {
+    display: inline-block;
+    padding: 14px 0 15px 0;
     text-decoration: none;
     color: #000000;
+}
+.shop-menu-list li:nth-child(2) {
+    margin-left: auto;
 }
 
 .main-slider {
@@ -162,12 +191,18 @@ html {
     top: 211px;
     left: 30px;
 }
-/* .slider-next,
+.slider-next,
 .slider-prev {
+    cursor: pointer;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: none;
     width: 20px;
     height: 60px;
-} */
+}
 .slider-next {
+    transform: rotate(180deg);
     margin-left: auto;
 }
 .slider-description {

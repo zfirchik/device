@@ -9,26 +9,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header class="page-header">
+<body class="page-body">
+  <header class="page-header page-wrapper">
     <h1 class="visually-hidden">Device</h1>
     <a class="page-link" href="index.html">
       <img src="img/device-icon.svg" width="145" height="36" alt="Девайс" class="site-logo">
     </a>  
+    <h2 class="visually-hidden">Навигация</h2>
     <section class="nav-bar">
-      <h2 class="visually-hidden">Навигация</h2>
-      <input type="text" class="search-input" placeholder="Текст поиска">
-      <button class="button search-button">Найти</button>
-      <a class="nav-login" href="#">Войти</a>
-      <a class="nav-logout visually-hidden" href="#">Выйти</a>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Сравнить</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Корзина</a>
-        </li>
-      </ul>
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Текст поиска">
+          <button class="search-button">Найти</button>
+        </div>
+        <div class="login-container">
+          <a class="nav-login" href="#">Коля Петухов</a>
+          <a class="nav-logout" href="#">Выйти</a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Сравнить</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Корзина</a>
+          </li>
+        </ul>
     </section>
     <section class="shop-menu">
       <ul class="shop-menu-list">
