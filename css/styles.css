@@ -57,9 +57,12 @@ html {
     grid-template-columns: 1fr;
     row-gap: 30px;
     padding: 0 60px;
-    background-image: linear-gradient(transparent 23px, #FFE17F 0px);
-    margin-top: 17px;
+    background-image: linear-gradient(transparent 22.61px, #FFE17F 0px);
+    margin-top: 17.39px;
     background-size: 1160px 300px;
+}
+.page-link {
+    height: 36px;
 }
 .nav-bar {
     display: flex;
@@ -182,10 +185,13 @@ html {
     text-transform: uppercase;
 }
 .shop-menu-item {
+    position: relative;
     display: flex;
 }
 .catalog-opener {
-    margin-left: 7px;
+    position: absolute;
+    left: 243px;
+    top: -15px;
 }
 .shop-menu-list {
     list-style: none;
@@ -197,7 +203,6 @@ html {
 }
 .shop-menu-link {
     display: inline-block;
-    padding: 14px 0 15px 0;
     text-decoration: none;
     color: #000000;
 }
@@ -209,7 +214,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    background-image: linear-gradient(#FFE17F 150px, transparent 0px);
+    background-image: linear-gradient(#FFE17F 152px, transparent 0px);
 }
 .slider-picture {
     position: relative;
