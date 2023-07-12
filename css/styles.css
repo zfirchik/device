@@ -61,6 +61,9 @@ html {
     margin-top: 17.39px;
     background-size: 1160px 300px;
 }
+.page-header.catalog {
+    padding-bottom: 38px;
+}
 .page-link {
     height: 36px;
 }
