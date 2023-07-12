@@ -192,9 +192,15 @@ html {
     display: flex;
 }
 .catalog-opener {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0;
+    height: 50px;
     position: absolute;
     left: 243px;
     top: -15px;
+    border: none;
+    background: none;
 }
 .shop-menu-list {
     list-style: none;
@@ -320,8 +326,7 @@ html {
 }
 
 .section-title,
-.subscribe-title,
-.breadcrumbs-title {
+.subscribe-title {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;
@@ -602,14 +607,6 @@ address {
     color: #444444;
     margin-left: auto;
 }
-.expand-button {
-    text-align: center;
-    font-family: "Raleway";
-    font-weight: 800;
-    line-height: normal;
-    letter-spacing: 3.6px;
-    text-transform: uppercase;
-}
 .page-footer {
     display: grid;
     grid-template-columns: 1fr 240px 680px 240px 1fr;
@@ -681,12 +678,66 @@ address {
     grid-row: 6 / 7;
 }
 
-
+.breadcrumbs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 1079px;
+    margin: 35px auto 0;
+}
+.breadcrumbs-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.breadcrumbs-arrow {
+    display: flex;
+    align-items: center;
+}
+.breadcrumbs-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+}
 .breadcrumbs-link {
     text-decoration: none;
     color: #000000;
+    font-size: 16px;
 }
-.filter-legend,
+.wrapper {
+    margin-top: 35px;
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-columns: 1fr 320px 840px 1fr;
+}
+.filter {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+.filter-legend {
+    padding: 25px 0;
+    margin: 0;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+}
+.catalog {
+    grid-column: 3 / 4;
+}
+.catalog-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .catalog-sort-title {
     font-family: "Raleway";
     font-size: 16px;
@@ -694,32 +745,94 @@ address {
     text-transform: uppercase;
     letter-spacing: 3.2px;
 }
-.breadcrumbs-link {
-    font-size: 16px;
+.catalog-container {
+    width: 840px;
+    box-sizing: border-box;
+    padding: 70px 40px 0 40px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 44px;
+    background-color: #ffffff;
+}
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.card-text {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-name {
+    max-width: 50%;
+    margin: 0;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.36px;
+}
+.card-price {
+    margin: 0;
+    color: #444444;
 }
 .filter-title {
     font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.36px;
 }
-.range-title {
-    opacity: 0.3;
+.expand-button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 18px 39px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Raleway";
+    font-weight: 800;
+    line-height: 13px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 3px #E5E5E5 solid;
 }
-.card-name {
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: -0.36px;
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    margin-bottom: 78px;
 }
 .pagination-prev,
 .pagination-next {
+    padding: 25px;
+    text-align: center;
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     color: #000000;
     text-decoration: none;
     letter-spacing: 3.6px;
     text-transform: uppercase;
 }
+.pagination-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.pagination-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .pagination-link {
     opacity: 0.3;
+    color: #444444;
     line-height: 20px;
     text-decoration: none;
+}
+.range-title {
+    opacity: 0.3;
 }
