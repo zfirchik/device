@@ -40,7 +40,7 @@
         <ul class="nav-menu">
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="compare-icon" width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="icons" clip-path="url(#clip0_50736_905)">
                 <g id="Vector">
                 <path d="M6 0.388916H4V12.3889H6V0.388916Z" fill="black"/>
@@ -58,7 +58,23 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Корзина</a>
+            <a class="nav-link" href="#">
+              <svg class="cart-counter-circle" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle id="Ellipse 3" cx="10.5" cy="10.7778" r="10.5" fill="white"/>
+                </svg>
+              <p class="cart-counter">2</p>
+              <svg class="cart-icon" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Property 1=cart, state=Default" clip-path="url(#clip0_11518_3329)">
+                <path id="Vector" d="M15.3 5.35693L11.8 5.55693L8.6 0.656934C8.5 0.456934 8.2 0.356934 8 0.356934C7.8 0.356934 7.5 0.456934 7.4 0.656934L4.2 5.55693H0.7C0.3 5.55693 0 5.85693 0 6.25693C0 6.35693 0 6.35693 0 6.45693L1.9 13.2569C2.1 13.9569 2.6 14.3569 3.3 14.3569H12.7C13.4 14.3569 13.9 13.9569 14.1 13.2569L16 6.35693C16 6.25693 16 6.25693 16 6.15693C16 5.75693 15.7 5.35693 15.3 5.35693ZM8 2.25693L10.2 5.45693H5.9L8 2.25693Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_11518_3329">
+                <rect width="16" height="14" fill="white" transform="translate(0 0.356934)"/>
+                </clipPath>
+                </defs>
+                </svg>
+              <p class="icon-text">Корзина</p>
+              </a>
           </li>
         </ul>
     </section>
@@ -66,6 +82,17 @@
       <ul class="shop-menu-list">
         <li class="shop-menu-item">
           <a class="shop-menu-link" href="#">Каталог товаров</a>
+          <svg class="catalog-opener" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.3" cx="25" cy="25.3889" r="24" stroke="black" stroke-width="2"/>
+            <g opacity="0.3" clip-path="url(#clip0_50794_927)">
+            <path d="M33 24.3889H26V17.3889H24V24.3889H17V26.3889H24V33.3889H26V26.3889H33V24.3889Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_50794_927">
+            <rect width="16" height="16" fill="white" transform="translate(17 17.3889)"/>
+            </clipPath>
+            </defs>
+            </svg>
         </li>
         <li class="shop-menu-item">
           <a class="shop-menu-link" href="#">Доставка</a>
@@ -103,19 +130,36 @@
         </div>
       </div>
       <div class="slider-description slider-one">
+        <p class="slider-number">01</p>
         <p class="section-title">Порхает как бабочка, жалит как пчела!</p>
         <p class="section-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
         <div class="slider-menu">
           <button class="button info-button">Подробнее</button>
           <ol class="section-indicators">
             <li class="indicator-item">
-              <a href="#" class="indicator-link">Первый слайд</a>
+              <a href="#" class="indicator-link active">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="indicators">
+                  <circle id="Ellipse 6" cx="6" cy="6" r="5" fill="black" stroke="black" stroke-width="2"/>
+                  </g>
+                  </svg>
+              </a>
             </li>
             <li class="indicator-item">
-              <a href="#" class="indicator-link">Второй слайд</a>
+              <a href="#" class="indicator-link"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="indicators">
+                <circle id="Ellipse 6" cx="6" cy="6" r="5" fill="white" stroke="black" stroke-width="2"/>
+                </g>
+                </svg>
+                </a>
             </li>
             <li class="indicator-item">
-              <a href="#" class="indicator-link">Третий слайд</a>
+              <a href="#" class="indicator-link"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="indicators">
+                <circle id="Ellipse 6" cx="6" cy="6" r="5" fill="white" stroke="black" stroke-width="2"/>
+                </g>
+                </svg>
+                </a>
             </li>
           </ol>
         </div>
@@ -217,14 +261,14 @@
       <div class="bg-stretch"></div>
       <div class="advantages-container">
         <ul class="advantages-list">
-          <li class="advantages-item">
-            <button class="button info-button active">Доставка</button>
+          <li class="advantages-item active">
+            <button class="button advantage-button active">Доставка</button>
           </li>
           <li class="advantages-item">
-            <button class="button info-button">Гарантия</button>
+            <button class="button advantage-button">Гарантия</button>
           </li>
           <li class="advantages-item">
-            <button class="button info-button">Кредит</button>
+            <button class="button advantage-button">Кредит</button>
           </li>
         </ul>
         <div class="advantage">
@@ -249,27 +293,72 @@
 
     <div class="main-delivery page-wrapper">
       <h2 class="visually-hidden">Оформление доставки </h2>
-      <button class="delivery-button">Оформить доставку</button>
+      <button class="delivery-button">
+        <svg class="delivery-icon" width="47" height="31" viewBox="0 0 47 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Frame" clip-path="url(#clip0_50794_608)">
+          <g id="Vector">
+          <path d="M46.7 15.4L40.2 7.2C39.9 6.8 39.5 6.6 39 6.6H30.7V1.5C30.7 0.7 30 0 29.2 0H1.5C0.7 0 0 0.7 0 1.5C0 2.3 0.7 3 1.5 3H27.7V24.7H15.8C15.2 22.8 13.4 21.4 11.3 21.4C8.7 21.4 6.5 23.6 6.5 26.2C6.5 28.8 8.7 31 11.3 31C13.4 31 15.2 29.6 15.8 27.7H29.2C30 27.7 30.7 27 30.7 26.2V9.6H38.3L44 16.9V24.8H41.8C41.2 22.9 39.4 21.5 37.3 21.5C34.7 21.5 32.5 23.7 32.5 26.3C32.5 28.9 34.6 31.1 37.3 31.1C39.4 31.1 41.2 29.7 41.8 27.8H45.5C46.3 27.8 47 27.1 47 26.3V16.4C47 16 46.9 15.7 46.7 15.4ZM11.3 28C10.3 28 9.5 27.2 9.5 26.2C9.5 25.2 10.3 24.4 11.3 24.4C12.3 24.4 13.1 25.2 13.1 26.2C13.1 27.2 12.2 28 11.3 28ZM37.4 28C36.4 28 35.6 27.2 35.6 26.2C35.6 25.2 36.4 24.4 37.4 24.4C38.4 24.4 39.2 25.2 39.2 26.2C39.2 27.2 38.3 28 37.4 28Z" fill="black"/>
+          <path d="M19.4 9.6C20.2 9.6 20.9 8.9 20.9 8.1C20.9 7.3 20.2 6.6 19.4 6.6H4.8C4 6.6 3.3 7.3 3.3 8.1C3.3 8.9 4 9.6 4.8 9.6H19.4Z" fill="black"/>
+          <path d="M17.7 14.7C17.7 13.9 17 13.2 16.2 13.2H1.5C0.7 13.2 0 13.9 0 14.7C0 15.5 0.7 16.2 1.5 16.2H16.2C17 16.2 17.7 15.5 17.7 14.7Z" fill="black"/>
+          </g>
+          </g>
+          <defs>
+          <clipPath id="clip0_50794_608">
+          <rect width="47" height="31" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>          
+      </button>
       <button class="delivery-description">Доставим редкий товар под заказ</button>
-      <button class="delivery-info-button">Узнать больше</button>
+      <button class="delivery-info-button">
+        <svg class="delivery-info-icon" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5"/>
+        <g opacity="0.3" clip-path="url(#clip0_50794_612)">
+        <path d="M21 14H19V16H21V14Z" fill="black"/>
+        <path d="M21 18H19V26H21V18Z" fill="black"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_50794_612">
+        <rect width="2" height="12" fill="white" transform="translate(19 14)"/>
+        </clipPath>
+        </defs>
+        </svg>
+      </button>
     </div>
     
     <section class="main-information page-wrapper">
       <div class="info-about">
+        <div class="info-border"></div>
         <h2 class="info-title">О нас</h2>
         <div class="info-wrapper">
           <p class="info-desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="info-desc">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="info-companies-list">
-            <li class="info-companies-item">Меловые линии</li>
-            <li class="info-companies-item">СДИК</li>
-            <li class="info-companies-item">ТоксБерри</li>
+            <li class="info-companies-item">
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle id="Ellipse 9" cx="4.00006" cy="4" r="4" fill="#FFC700"/>
+                </svg>
+              <p class="companies-list-text">Меловые линии</p>
+            </li>
+            <li class="info-companies-item">
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle id="Ellipse 9" cx="4.00006" cy="4" r="4" fill="#FFC700"/>
+                </svg>
+              <p class="companies-list-text">СДИК</p>
+            </li>
+            <li class="info-companies-item">
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle id="Ellipse 9" cx="4.00006" cy="4" r="4" fill="#FFC700"/>
+                </svg>
+              <p class="companies-list-text">Токсберри</p>
+            </li>
           </ul>
           <button class="button about-button">Подробнее о нас</button>
         </div>
       </div>
 
       <div class="info-contacts">
+        <div class="info-border"></div>
         <h2 class="info-title">Контакты</h2>
         <div class="info-wrapper">
           <p class="info-desc">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки.</p>
@@ -300,48 +389,70 @@
           <input type="email" name="email" class="subscribe-email" placeholder="Ваш e-mail" required>
           <button class="submit-button" type="submit">Подписаться</button>
         </div>
-        <p class="subscribe-free">Это бесплатно</p>
+        <div class="subscribe-free">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="tick-big 1">
+            <path id="Vector" d="M15.498 1L5.89805 10.3L1.49805 6V10.7L5.99805 15L15.498 5.7V1Z" fill="#08AF00"/>
+            </g>
+            </svg>            
+          <p>Это бесплатно</p>
+        </div>
       </form>
     </section>
   </main>
   
   <footer class="page-footer">
     <img src="img/footer-icon.svg" class="footer-logo" alt="Логотип Device" width="145" height="36">
-    <div class="footer-info">
-      <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      <ul class="footer-nav">
-        <li class="footer-nav-item">
-          <a href="#" class="footer-nav-link">Доставка</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#" class="footer-nav-link">Гарантия</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#" class="footer-nav-link">Контакты</a>
-        </li>
-      </ul>
-      <a href="tel:+78128121212" class="contacts-tel">Тел.: +7 (812) 812-12-12</a>
-    </div>
-    <div class="footer-socials">
-      <ul class="footer-socials-list">
-        <li class="footer-social-items">
-          <a href="#" class="footer-social-fb">
-            <img src="img/fb-icon.svg" width="40" height="40" alt="Facebook">
-          </a>
-        </li>
-        <li class="footer-social-items">
-          <a href="#" class="footer-social-in">
-            <img src="img/inst-icon.svg" width="40" height="40" alt="Instagram">
-          </a>
-        </li>
-        <li class="footer-social-items">
-          <a href="#" class="footer-social-tw">
-            <img src="img/tw-icon.svg" width="40" height="40" alt="Twitter">
-          </a>
-        </li>
-      </ul>
-      <a href="https://htmlacademy.ru" class="html-academy"><img src="img/academy-logo.svg" class="html-academy-logo" alt="powered by htmlacademy.ru"></a>
-    </div>
+    <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+    <ul class="footer-nav">
+      <li class="footer-nav-item">
+        <a href="#" class="footer-nav-link">Доставка</a>
+      </li>
+      <li class="footer-nav-item">
+        <a href="#" class="footer-nav-link">Гарантия</a>
+      </li>
+      <li class="footer-nav-item">
+        <a href="#" class="footer-nav-link">Контакты</a>
+      </li>
+    </ul>
+    <a href="tel:+78128121212" class="contacts-tel">Тел.: +7 (812) 812-12-12</a>
+    <div class="footer-frame"></div>
+    <ul class="footer-socials-list">
+      <li class="footer-social-item">
+        <a href="#" class="footer-social-link">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Frame">
+            <circle id="Ellipse" cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
+            <path id="Vector" d="M22.5 14H25V11H21.6C18.8 11 18 12.7 18 15.2V17H16V20H18V29H21V20H24.3L24.9 17H21V15.5C21 14.7 21.3 14 22.5 14Z" fill="#444444"/>
+            </g>
+            </svg>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a href="#" class="footer-social-link">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Frame">
+            <circle id="Ellipse" cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
+            <g id="Vector">
+            <path d="M20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22Z" fill="#444444"/>
+            <path d="M26.7 13.3C25.8 12.4 24.7 12 23.3 12H16.7C13.9 12 12 13.9 12 16.7V23.3C12 24.7 12.4 25.9 13.4 26.7C14.3 27.6 15.4 28 16.7 28H23.3C24.7 28 25.9 27.6 26.7 26.7C27.5 25.8 28 24.7 28 23.3V16.7C28 15.3 27.6 14.1 26.7 13.3ZM20 24.1C17.8 24.1 15.9 22.3 15.9 20C15.9 17.7 17.8 15.9 20 15.9C22.2 15.9 24.1 17.7 24.1 20C24.1 22.3 22.2 24.1 20 24.1ZM24.6 16.7C23.9 16.7 23.3 16.2 23.3 15.4C23.3 14.6 23.8 14.1 24.6 14.1C25.3 14.1 25.9 14.7 25.9 15.4C25.9 16.1 25.3 16.7 24.6 16.7Z" fill="#444444"/>
+            </g>
+            </g>
+            </svg>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a href="#" class="footer-social-link">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Frame">
+            <circle id="Ellipse" cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
+            <path id="Vector" d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z" fill="#444444"/>
+            </g>
+            </svg>              
+        </a>
+      </li>
+    </ul>
+    <a href="https://htmlacademy.ru" class="html-academy"><img src="img/academy-logo.svg" class="html-academy-logo" alt="powered by htmlacademy.ru"></a>
   </footer>
 </body>
 </html>
