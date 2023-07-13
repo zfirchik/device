@@ -65,8 +65,22 @@ html {
     padding-bottom: 38px;
 }
 .page-link {
+    width: 145px;
     height: 36px;
 }
+.page-link:hover {
+    opacity: 0.6;
+}
+.page-link:focus {
+    opacity: 1;
+    outline: 2px solid #af4fff;
+    box-sizing: border-box;
+}
+.page-link:active {
+    opacity: 0.3;
+    outline: none;
+}
+
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -106,6 +120,21 @@ html {
     background: none;
     background-image: linear-gradient(transparent 40%, #FFE17F 40% 60%, transparent 60%);
     cursor: pointer;
+}
+.button:hover {
+    background-color: #FFE17F;
+}
+.button:focus {
+    outline: 2px solid #af4fff;
+    box-sizing: border-box;
+}
+.button:active {
+    background-image: none;
+    background-color: #FFCC33;
+    outline: none;
+}
+.button:disabled {
+    opacity: 0.3;
 }
 .search-button {
     box-sizing: border-box;
@@ -614,9 +643,23 @@ address {
     background-color: #444444;
     color: #ffffff;
 }
-.footer-logo {
+.footer-link {
+    width: 145px;
+    height: 36px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+}
+.footer-link:hover {
+    opacity: 0.6;
+}
+.footer-link:focus {
+    opacity: 1;
+    outline: 2px solid #af4fff;
+    box-sizing: border-box;
+}
+.footer-link:active {
+    opacity: 0.3;
+    outline: none;
 }
 .footer-nav {
     padding: 0;
@@ -693,7 +736,7 @@ address {
     gap: 16px;
     align-items: center;
 }
-.breadcrumbs-arrow {
+.breadcrumbs-folders {
     display: flex;
     align-items: center;
 }
@@ -708,6 +751,18 @@ address {
     text-decoration: none;
     color: #000000;
     font-size: 16px;
+}
+.breadcrumbs-link:hover {
+    opacity: 0.6;
+}
+.breadcrumbs-link:focus {
+    opacity: 1;
+    outline: 2px solid #af4fff;
+    box-sizing: border-box;
+}
+.breadcrumbs-link:active {
+    opacity: 0.3;
+    outline: none;
 }
 .wrapper {
     margin-top: 35px;
@@ -793,7 +848,21 @@ address {
     letter-spacing: 3.2px;
     text-transform: uppercase;
     background-color: #ffffff;
-    border: 3px #E5E5E5 solid;
+    border: 3px solid #E5E5E5;
+}
+.expand-button:hover {
+    border: 3px solid #000;
+}
+.expand-button:focus {
+    outline: 2px solid #af4fff;
+    box-sizing: border-box;
+}
+.expand-button:active {
+    border: 3px solid #000;
+    opacity: 0.3;
+}
+.expand-button:disabled {
+    opacity: 0.3;
 }
 .pagination {
     width: 100%;
